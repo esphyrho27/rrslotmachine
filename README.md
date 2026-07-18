@@ -1,4 +1,4 @@
-# 🎪 RR Slot Machine — Ringmaster's Carnival
+# 🎪 RR Slot Machine 
 
 > *"Kung wa ka'y swerte sa iya, diri ta!"*
 
