@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="An original carnival-themed slot machine game." />
+    <title>RR Slot Machine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="smoke smoke-one" aria-hidden="true"></div>
+    <div class="smoke smoke-two" aria-hidden="true"></div>
+    <div class="particle-field" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <header class="site-header">
+      <p class="showtime">✦ Tonight's Grand Attraction ✦</p>
+      <h1><span>RR</span> Slot Machine</h1>
+      <p class="subtitle">"kung wa ka'y swerte sa iya"</p>
+    </header>
+
+    <main>
+      <section class="slot-machine" aria-labelledby="machine-title">
+        <h2 id="machine-title" class="sr-only">Carnival slot machine</h2>
+        <div class="bulb-rail bulb-top" aria-hidden="true"></div>
+        <div class="bulb-rail bulb-bottom" aria-hidden="true"></div>
+
+        <div class="machine-crown" aria-hidden="true"><span>★</span><span>★</span><span>★</span></div>
+        <div class="reel-stage" id="reelStage">
+          <div class="curtain curtain-left" aria-hidden="true"></div>
+          <div class="reel-frame"><div class="reel" id="reel1" aria-label="First reel">🎪</div></div>
+          <div class="reel-frame"><div class="reel" id="reel2" aria-label="Second reel">🎭</div></div>
+          <div class="reel-frame"><div class="reel" id="reel3" aria-label="Third reel">🎈</div></div>
+          <div class="curtain curtain-right" aria-hidden="true"></div>
+        </div>
+
+        <p id="gameMessage" class="game-message" role="status" aria-live="polite">Place your bet and let the spectacle begin!</p>
+        <div id="confetti" class="confetti" aria-hidden="true"></div>
+
+        <section class="scoreboard" aria-label="Game stats">
+          <article class="stat-card"><span>Player Credits</span><strong id="credits">100</strong></article>
+          <article class="stat-card"><span>Current Bet</span><strong id="bet">10</strong></article>
+          <article class="stat-card"><span>Win Amount</span><strong id="winAmount">0</strong></article>
+        </section>
+
+        <section class="controls" aria-label="Game controls">
+          <button id="betMinus" class="control-button secondary" type="button" aria-label="Decrease bet">BET −</button>
+          <button id="spinButton" class="spin-button" type="button"><span>SPIN</span><small>FACE YOUR FATE</small></button>
+          <button id="betPlus" class="control-button secondary" type="button" aria-label="Increase bet">BET +</button>
+          <button id="resetButton" class="control-button reset" type="button">RESET GAME</button>
+        </section>
+      </section>
+    </main>
+
+    <footer>Ronald Ryan Intud </footer>
+
+    <!-- Optional audio: add <audio> elements here and assign them in script.js. -->
+    <script src="script.js"></script>
+  </body>
+</html>
